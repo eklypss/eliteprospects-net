@@ -43,7 +43,7 @@ foreach(var t in transfers.DataList)
 
 ```
 EPClient client = new EPClient();
-var retiredNumbers = client.GetRetiredNumber(new Parameters(new Filter("team.name=Boston Bruins"), new Limit(100), new Sort("")));
+var retiredNumbers = client.GetRetiredNumber(new Parameters(new Filter("team.name=Boston Bruins"), new Limit(100), new Sort("number:asc")));
 foreach(var t in retiredNumbers.DataList)
 {
     Console.WriteLine("#{0} {1} {2}", t.Number, t.Player.FirstName, t.Player.LastName);
@@ -52,16 +52,16 @@ foreach(var t in retiredNumbers.DataList)
 
 **Outputs:**
 ```
-#5 Dit Clapper
+#2 Eddie Shore
 #3 Lionel Hitchman
+#4 Bobby Orr
+#5 Dit Clapper
+#7 Phil Esposito
+#8 Cam Neely
 #9 Johnny Bucyk
 #15 Milt Schmidt
-#77 Raymond Bourque
-#2 Eddie Shore
-#7 Phil Esposito
-#4 Bobby Orr
-#8 Cam Neely
 #24 Terry O'Reilly
+#77 Raymond Bourque
 ```
 **Note:** the data above is provided by **[eliteprospects.com](http://www.eliteprospects.com/)**
 
