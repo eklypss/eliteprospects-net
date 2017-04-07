@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,8 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Source\Data\URL.cs" />
+    <Compile Include="Source\Enum\RequestType.cs" />
+    <Compile Include="Source\EPClient.cs" />
+    <Compile Include="Source\Interfaces\IEPClient.cs" />
+    <Compile Include="Source\Model\Country.cs" />
+    <Compile Include="Source\Model\Data.cs" />
+    <Compile Include="Source\Model\Metadata.cs" />
+    <Compile Include="Source\Model\Parameters\Filter.cs" />
+    <Compile Include="Source\Model\Parameters\Limit.cs" />
+    <Compile Include="Source\Model\Parameters\Parameters.cs" />
+    <Compile Include="Source\Model\Player.cs" />
+    <Compile Include="Source\Model\RetiredNumber.cs" />
+    <Compile Include="Source\Model\Team.cs" />
+    <Compile Include="Source\Requester.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

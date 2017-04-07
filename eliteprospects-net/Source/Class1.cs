@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace eliteprospects_net
 {
-    public class Class1
+    public class EPClient
     {
     }
 }
