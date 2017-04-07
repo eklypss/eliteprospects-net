@@ -1,5 +1,5 @@
 # eliteprospects-net
-A work-in-progress project that aims to create a fully featured & easy-to-use .NET/C# wrapper for the [eliteprospects.com](http://www.eliteprospects.com/) API.
+A work-in-progress project that aims to create a fully featured & easy-to-use unofficial .NET/C# wrapper for the [eliteprospects.com](http://www.eliteprospects.com/) API.
 
 ## Notes
 All data is fetched from the EP API and the data is owned by them. If you wish to use this wrapper, please refer to their [FAQ](https://github.com/menmo/eliteprospects-api-documentation/blob/master/README.md) and [Terms of Service](https://github.com/menmo/eliteprospects-api-documentation/blob/master/LICENSE.md). 
