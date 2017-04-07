@@ -49,14 +49,20 @@
     <Compile Include="Source\EPClient.cs" />
     <Compile Include="Source\Interfaces\IEPClient.cs" />
     <Compile Include="Source\Model\Country.cs" />
-    <Compile Include="Source\Model\Data.cs" />
+    <Compile Include="Source\Model\LatestTeamStats.cs" />
+    <Compile Include="Source\Model\League.cs" />
+    <Compile Include="Source\Model\Locality.cs" />
     <Compile Include="Source\Model\Metadata.cs" />
     <Compile Include="Source\Model\Parameters\Filter.cs" />
     <Compile Include="Source\Model\Parameters\Limit.cs" />
     <Compile Include="Source\Model\Parameters\Parameters.cs" />
+    <Compile Include="Source\Model\Parameters\Sort.cs" />
     <Compile Include="Source\Model\Player.cs" />
     <Compile Include="Source\Model\RetiredNumber.cs" />
+    <Compile Include="Source\Model\Season.cs" />
     <Compile Include="Source\Model\Team.cs" />
+    <Compile Include="Source\Model\Transfer.cs" />
+    <Compile Include="Source\Model\TransferSource.cs" />
     <Compile Include="Source\Requester.cs" />
   </ItemGroup>
   <ItemGroup>

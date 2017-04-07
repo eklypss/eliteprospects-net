@@ -1,5 +1,8 @@
-﻿namespace eliteprospects_net.Source.Enum
+﻿using System;
+
+namespace eliteprospects_net.Source.Enum
 {
+    [Flags]
     public enum RequestType
     {
         RetiredNumbers,

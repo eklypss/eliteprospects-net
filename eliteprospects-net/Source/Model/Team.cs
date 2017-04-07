@@ -39,5 +39,14 @@ namespace eliteprospects_net.Source.Model
 
         [JsonProperty(PropertyName = "searchable")]
         public string Searchable { get; set; }
+
+        [JsonProperty(PropertyName = "locality")]
+        public Locality Locality { get; set; }
+
+        [JsonProperty(PropertyName = "latestTeamStats")]
+        public LatestTeamStats LatestTeamStats { get; set; }
+
+        [JsonProperty(PropertyName = "country")]
+        public Country Country { get; set; }
     }
 }
