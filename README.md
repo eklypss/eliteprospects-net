@@ -39,7 +39,7 @@ foreach(var t in transfers.DataList)
 [2017-03-31] Michael Lindqvist from AIK to Färjestad BK
 ```
 
-**Getting the retired numbers for a team specified by a string:**
+**Getting the retired numbers for a team specified with a string:**
 
 ```
 EPClient client = new EPClient();
