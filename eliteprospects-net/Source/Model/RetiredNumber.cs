@@ -21,7 +21,7 @@ namespace eliteprospects_net.Source.Model
             [JsonProperty(PropertyName = "updated")]
             public string Updated { get; set; }
 
-            [JsonProperty(PropertyName = "numbers")]
+            [JsonProperty(PropertyName = "number")]
             public int Number { get; set; }
 
             public Team Team { get; set; }
