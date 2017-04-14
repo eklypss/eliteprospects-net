@@ -58,6 +58,9 @@
     <Compile Include="Source\Model\Parameters\Parameters.cs" />
     <Compile Include="Source\Model\Parameters\Sort.cs" />
     <Compile Include="Source\Model\Player.cs" />
+    <Compile Include="Source\Model\PlayerStatisticalData.cs" />
+    <Compile Include="Source\Model\Player\StatisticalData\Height.cs" />
+    <Compile Include="Source\Model\Player\StatisticalData\Weight.cs" />
     <Compile Include="Source\Model\RetiredNumber.cs" />
     <Compile Include="Source\Model\Season.cs" />
     <Compile Include="Source\Model\Team.cs" />

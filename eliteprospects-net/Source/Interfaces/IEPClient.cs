@@ -1,6 +1,4 @@
-﻿using eliteprospects_net.Source.Model;
-using eliteprospects_net.Source.Model.Parameters;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace eliteprospects_net.Source.Interfaces
 {
@@ -19,5 +17,12 @@ namespace eliteprospects_net.Source.Interfaces
         Transfer GetTransfer(Parameters parameters);
 
         Task<Transfer> GetTransferAsync(Parameters parameters);
+
+        /// <summary>
+        /// Functions for retrieving data about player statistical data.
+        /// </summary>
+        PlayerStatisticalData GetStatisticalData(Parameters parameters);
+
+        Task<PlayerStatisticalData> GetStatisticalDataAsync(Parameters parameters);
     }
 }

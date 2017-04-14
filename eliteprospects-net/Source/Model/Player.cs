@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace eliteprospects_net.Source.Model
+namespace eliteprospects_net
 {
     public class Player
     {

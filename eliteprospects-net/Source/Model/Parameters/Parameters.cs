@@ -1,4 +1,4 @@
-﻿namespace eliteprospects_net.Source.Model.Parameters
+﻿namespace eliteprospects_net
 {
     public class Parameters
     {

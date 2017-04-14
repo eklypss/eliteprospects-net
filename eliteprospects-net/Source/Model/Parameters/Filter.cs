@@ -1,4 +1,4 @@
-﻿namespace eliteprospects_net.Source.Model.Parameters
+﻿namespace eliteprospects_net
 {
     public class Filter
     {
@@ -6,7 +6,7 @@
 
         public Filter(string filter)
         {
-            SearchFilter = filter;
+            SearchFilter = filter.Replace(" ", "%20");
         }
     }
 }

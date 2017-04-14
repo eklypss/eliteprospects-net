@@ -1,6 +1,5 @@
 ﻿using eliteprospects_net.Source.Data;
 using eliteprospects_net.Source.Enum;
-using eliteprospects_net.Source.Model.Parameters;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -49,10 +48,10 @@ namespace eliteprospects_net.Source
             return result;
         }
 
-        public string BuildString(RequestType type, Parameters parameters)
+        public string BuildString(RequestType type, Parameters parameters, int id = -1)
         {
-            string typeString = ((RequestType)type).ToString().ToLower();
             string s = string.Empty;
+            string typeString = ((RequestType)type).ToString().ToLower();
             if (string.IsNullOrWhiteSpace(parameters.Sort.ResultSort)) s = string.Format("{0}{1}?filter={2}&limit={3}", URL.BaseURL, typeString, parameters.Filter.SearchFilter, parameters.Limit.ResultLimit);
             else s = string.Format("{0}{1}?filter={2}&sort={3}&limit={4}", URL.BaseURL, typeString, parameters.Filter.SearchFilter, parameters.Sort.ResultSort, parameters.Limit.ResultLimit);
             return s;

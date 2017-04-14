@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace eliteprospects_net.Source.Model
+namespace eliteprospects_net
 {
     public class Transfer
     {
