@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace eliteprospects_net.Source.Interfaces
+namespace eliteprospects_net
 {
     public interface IEPClient
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace eliteprospects_net.Source.Enum
+namespace eliteprospects_net
 {
     [Flags]
     public enum RequestType

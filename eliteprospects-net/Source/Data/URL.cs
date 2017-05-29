@@ -1,4 +1,4 @@
-﻿namespace eliteprospects_net.Source.Data
+﻿namespace eliteprospects_net
 {
     public static class URL
     {

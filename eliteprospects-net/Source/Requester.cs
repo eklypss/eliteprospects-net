@@ -1,9 +1,7 @@
-﻿using eliteprospects_net.Source.Data;
-using eliteprospects_net.Source.Enum;
-using System.Net.Http;
+﻿using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace eliteprospects_net.Source
+namespace eliteprospects_net
 {
     internal class Requester
     {
