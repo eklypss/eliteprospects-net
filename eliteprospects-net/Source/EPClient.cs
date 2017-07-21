@@ -6,21 +6,11 @@ namespace eliteprospects_net
 {
     public class EPClient : IEPClient
     {
-        private static EPClient instance;
-        private Requester requester;
+        private readonly Requester requester;
 
-        public static EPClient GetInstance()
+        public EPClient(string key)
         {
-            if (instance == null)
-            {
-                instance = new EPClient();
-            }
-            return instance;
-        }
-
-        public EPClient()
-        {
-            requester = new Requester();
+            requester = new Requester(key);
         }
 
         public RetiredNumber GetRetiredNumber(Parameters parameters)

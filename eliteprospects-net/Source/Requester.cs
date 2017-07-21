@@ -1,4 +1,5 @@
-﻿using System.Net.Http;
+﻿using System;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace eliteprospects_net
@@ -7,9 +8,17 @@ namespace eliteprospects_net
     {
         private readonly HttpClient httpClient;
 
-        internal Requester()
+        private string ApiKey { get; set; }
+
+        internal Requester(string key)
         {
+            if (string.IsNullOrEmpty(key))
+            {
+                throw new ArgumentException("API key cannot be null.");
+            }
+
             httpClient = new HttpClient();
+            ApiKey = key;
         }
 
         public string GetResult(HttpRequestMessage requestMessage)
@@ -50,8 +59,8 @@ namespace eliteprospects_net
         {
             string s = string.Empty;
             string typeString = ((RequestType)type).ToString().ToLower();
-            if (string.IsNullOrWhiteSpace(parameters.Sort.ResultSort)) s = string.Format("{0}{1}?filter={2}&limit={3}", URL.BaseURL, typeString, parameters.Filter.SearchFilter, parameters.Limit.ResultLimit);
-            else s = string.Format("{0}{1}?filter={2}&sort={3}&limit={4}", URL.BaseURL, typeString, parameters.Filter.SearchFilter, parameters.Sort.ResultSort, parameters.Limit.ResultLimit);
+            if (string.IsNullOrWhiteSpace(parameters.Sort.ResultSort)) s = string.Format("{0}{1}?filter={2}&limit={3}&apiKey={4}", URL.BaseURL, typeString, parameters.Filter.SearchFilter, parameters.Limit.ResultLimit, ApiKey);
+            else s = string.Format("{0}{1}?filter={2}&sort={3}&limit={4}&apiKey={5}", URL.BaseURL, typeString, parameters.Filter.SearchFilter, parameters.Sort.ResultSort, parameters.Limit.ResultLimit, ApiKey);
             return s;
         }
     }
